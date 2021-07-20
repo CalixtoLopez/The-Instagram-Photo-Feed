@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Photo Feed</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div class=" container-fluid ">
+        <div class="row">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-instagram offset-10"></i>
+                    Instagram
+                </a>
+                <div class="col align-items-center ">
+                    <!-- Button trigger modal -->
+                    <ul class="nav ml-auto align-items-center">
+                        <button type="button" class="btn btn-success offset-md-8" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn bg-transparent  dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                            </li>
+                        </div>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1"></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                        <div>
+
+                                            <i class="fas fa-camera"></i>
+                                            <i class="fas fa-map-marker-alt"></i>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+    <ul class="nav nav-pills " id="pills-tab" role="tablist">
+        <li class="nav-item offset-md-5 " role="presentation">
+            <button class="nav-link active outline-secondary" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fas fa-th-large"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link outline-secondary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="fas fa-stream"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 p-1">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                        <img src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            class="image-fluid" alt="stairs">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade bg-secondary" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- Post instagram-->
+            <div class="card offset-md-3 mb-5 " style="width: 40rem;">
+                <div class="card-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="card-title">My first photo</h2>
+
+                            </div>
+                            <div class="col">
+                                <p class="card-title " >17/20</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                <img
+                    src="https://images.pexels.com/photos/7294665/pexels-photo-7294665.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="card-body">
+                    <h5 class="card-title">23 Likes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <i class="fas fa-heart"></i>
+                    <input class="form-control form-control-sm" type="text" placeholder="Comment">
+                    
+                    
+                </div>
+            </div>
+
+            <!-- Post instagram-->
+            <div class="card offset-md-3 mb-5 mt-20" style="width: 40rem;">
+                <div class="card-body">
+                    <h2 class="card-title">Cute Koala!</h2>
+
+                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1049&q=80">
+                <div class="card-body">
+                    <h5 class="card-title">80 Likes</h5>
+                    <p class="card-text">Look at him sleep!</p>
+                    <i class="fas fa-heart"></i> 
+                     <input class="form-control form-control-sm" type="text" placeholder="Comment">
+                    
+                </div>
+            </div>
+
+
+            <!-- Post instagram-->
+            <div class="card offset-md-3 mb-5 mt-20" style="width: 40rem;">
+                <div class="card-body">
+                    <h2 class="card-title">Nature</h2>
+
+                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+                <div class="card-body">
+                    <h5 class="card-title">245 Likes</h5>
+                    <p class="card-text">Something beautiful I saw yesterday</p>
+                    <i class="fas fa-heart"></i> <input class="form-control form-control-sm" type="text" placeholder="Comment">
+                    
+                </div>
+            </div>
+
+
+
+           
+        
+
+
+        </div>
+
+    </div>
+
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
